@@ -1,0 +1,5 @@
+file(GLOB SRC_FILES *.cpp)
+
+include_directories("../3dparty/pouch/src")
+
+add_library(catalogue STATIC ${SRC_FILES})

@@ -1,0 +1,10 @@
+project(CatalogueExamples)
+cmake_minimum_required(VERSION 3.0)
+
+include_directories("../src")
+
+add_executable(catalogue_example example.cpp)
+target_link_libraries(catalogue_example catalogue)
+
+add_executable(test_vma test_vma.cpp)
+target_link_libraries(test_vma catalogue)

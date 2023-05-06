@@ -1,0 +1,7 @@
+project(CatalogueBenchmark)
+cmake_minimum_required(VERSION 3.0)
+
+include_directories("../src")
+
+add_executable(catalogue_benchmark_1 benchmark_1.cpp)
+target_link_libraries(catalogue_benchmark_1 catalogue)
